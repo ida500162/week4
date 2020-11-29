@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* PC尺寸 */
+.banner {
+  position: relative; }
+  .banner .bg {
+    width: 100%; }
+  .banner .title {
+    max-width: 1160px;
+    margin: 0 auto;
+    -webkit-transform: translateY(-90px);
+        -ms-transform: translateY(-90px);
+            transform: translateY(-90px);
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 80px; }
+    .banner .title .icon {
+      margin-left: 24px; }
+
+.faq_container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-top: 0;
+  padding-bottom: 80px;
+  position: relative; }
+  .faq_container .sub_title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 36px;
+    line-height: 63px; }
+  .faq_container .items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .faq_container .items .item {
+      width: 100%;
+      margin-bottom: 24px; }
+      .faq_container .items .item .item_title {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 23px; }
+      .faq_container .items .item .info {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 16px 10%; }
+
+/* 平板尺寸 */
+/* 手機尺寸 */
+
+/*# sourceMappingURL=faq.css.map */

@@ -1,10 +1,32 @@
----
-title: 六角眼鏡作業-首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>六角眼鏡作業-首頁</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 data-aos="fade-right">
+            <a href="/" class="logo">
+                Hex Glasses
+            </a>
+        </h1>
+
+        
+        <ul class="menu" data-aos="fade-left">
+            <li data-aos="fade-down" class="headerMenu"><a class="link">系列鏡框</a></li>
+            <li data-aos="fade-down" class="headerMenu"><a class="link">門市據點</a></li>
+            <li data-aos="fade-down" class="headerMenu"><a class="link">部落格</a></li>
+            <li data-aos="fade-down" class="headerMenu"><a class="link" href="faq.html">常見問題</a></li>
+        </ul>
+    </div>
+    
+    
 <div class="banner_section">
     <img data-aos="fade-up" src="./assets/images/banner.png" alt="bg" class="bg">
     <h1 class="title" data-aos="fade-right">
@@ -161,3 +183,84 @@ current: index
         </form>
     </div>
 </div>
+    
+    <div class="footer">
+        <div class="wrap">
+            <div class="top_section">
+                <ul class="left_menu">
+                    <li><a href="" class="link">首頁</a></li>
+                    <li><a href="" class="link">系列鏡框</a></li>
+                    <li><a href="" class="link">門市據點</a></li>
+                    <li><a href="" class="link">部落格</a></li>
+                    <li><a href="faq.html" class="link">常見問題</a></li>
+                </ul>
+    
+                <div class="right_social">
+                    <a href="#"><img src="./assets/images/icon-fb.svg" alt="FB" class="social_icon"></a>
+                    <a href="#"><img src="./assets/images/icon-ig.svg" alt="Instagram" class="social_icon"></a>
+                    <a href="#"><img src="./assets/images/icon-line.svg" alt="LINE" class="social_icon"></a>
+                </div>
+            </div>
+    
+            <div class="middle_section">
+                <div class="contact">
+                    <a class="info" href="#">
+                        <img class="icon_phone" src="./assets/images/icon-phone.svg" alt="icon-phone">
+                        0800-000-000
+                    </a>
+                </div>
+    
+                <div class="contact">
+                    <a class="info" href="#">
+                        <img class="icon_email" src="./assets/images/icon-mail.svg" alt="icon-mail">
+                        glasses@business.com
+                    </a>
+                </div>
+    
+                <hr>
+            </div>
+    
+            <div class="bottom_section">
+                <div class="left_info">
+                    <img class="logo" src="./assets/images/logo.png" alt="logo">
+                    <p class="copyright">Copyright © 2020 Glasses.All rights reserved.</p>
+                </div>
+    
+                <div class="right_service">
+                    <a href="/" class="private">隱私權政策</a>
+                    <a href="/" class="service">服務條款</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 240, // offset (in px) from the original trigger point
+        delay: 300, // values from 0 to 3000, with step 50ms
+        duration: 500, // values from 0 to 3000, with step 50ms
+        easing: 'ease-out-back', // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+    });
+    </script>
+</body>
+
+</html>
